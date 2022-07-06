@@ -1,0 +1,10 @@
+
+ 개념
+하나의 입구와 하나의 출구를 가지는(FIFO) 자료구조
+
+ 관련 용어
+Enqueue
+put() / insert()
+
+Dequeue
+get() / delete()
