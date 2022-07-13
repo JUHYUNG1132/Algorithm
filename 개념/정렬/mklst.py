@@ -27,4 +27,3 @@ def avg_time(func, target, epoch = 10):
 
 if __name__ == "__main__":
     print(mklst(20))
-    
