@@ -1,3 +1,4 @@
+# sol 1, 실패, 메모리 초과
 import sys
 N = int(sys.stdin.readline())
 s = list()

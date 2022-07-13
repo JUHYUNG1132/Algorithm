@@ -1,32 +1,12 @@
-# sol 1, 실패, 메모리 초과
+# sol2, 성공, 메모리 87456, 시간 1392ms
 import sys
 N = int(sys.stdin.readline())
 s = list()
 
-def qsort(arr):
-    def sort(low, high):
-        if high <= low:
-            return
-
-        mid = partition(low, high)
-        sort(low, mid - 1)
-        sort(mid, high)
-
-    def partition(low, high):
-        pivot = arr[(low + high) // 2]
-        while low <= high:
-            while arr[low] < pivot:
-                low += 1
-            while arr[high] > pivot:
-                high -= 1
-            if low <= high:
-                arr[low], arr[high] = arr[high], arr[low]
-                low, high = low + 1, high - 1
-        return low
-
-    return sort(0, len(arr) - 1)
-
 for i in range(N):
     s.append(int(sys.stdin.readline()))
 
-print(*qsort(s), sep="\n")
+print(*sorted(s), sep="\n")
+
+# ????
+# 정렬속도 sorted > quick sort (nlogn) < sort 인가?
