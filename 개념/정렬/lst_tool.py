@@ -18,8 +18,8 @@ def avg_time(func, target, epoch = 10):
     t = list()
     for i in range(epoch):
         lst = list(target)
-
         s = time.time()
+        func(lst)
         t.append(time.time()-s)
 
     return sum(t)/len(t)
