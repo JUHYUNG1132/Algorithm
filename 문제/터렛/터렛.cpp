@@ -1,4 +1,4 @@
-# 성공, 2032KB, 8ms
+// 성공, 2032KB, 8ms
 #include <iostream>
 #include <cmath>
 using namespace std;
